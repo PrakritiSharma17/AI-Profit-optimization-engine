@@ -9,13 +9,13 @@
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "frontend/dist"
       }
     }
   ],
   "routes": [
     {
-      "src": "/(predict-price|upload-excel|market-trend|history|ai-recommendation)",
+      "src": "/api/(predict-price|upload-excel|market-trend|history|ai-recommendation)",
       "dest": "/backend/app.py"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/$1"
+      "dest": "/$1"
     }
   ]
 }
