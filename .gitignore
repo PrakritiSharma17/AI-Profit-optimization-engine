@@ -1,0 +1,5 @@
+# Ignore local environment files
+backend/.env
+.venv/
+.venv-1/
+node_modules/
