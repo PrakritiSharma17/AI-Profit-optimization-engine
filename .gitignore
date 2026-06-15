@@ -1,5 +1,8 @@
 # Ignore local environment files
 backend/.env
+backend/models/
+*.pyc
+__pycache__/
 .venv/
 .venv-1/
 node_modules/
